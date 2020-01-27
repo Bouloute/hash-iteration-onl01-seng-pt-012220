@@ -6,7 +6,9 @@
 
 def happy_birthday(birthday_kids)
   # add your code snippet here!
-  puts birthday_kids.collect{|name, age|
-    "Happy Birthday #{name}! You are now #{age} years old!"
+  birthday_kids.each{|name, age|
+    if age <= 12
+      "Happy Birthday #{name}! You are now #{age} years old!"
+    end
   }
 end
